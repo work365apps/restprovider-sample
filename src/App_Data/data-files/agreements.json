@@ -1,0 +1,76 @@
+﻿[
+  {
+    "SignedBy": null,
+    "Customer": {
+      "Id": "0001",
+      "Name": null
+    },
+    "SignedOn": "0001-01-01T00:00:00",
+    "TemplateId": "Temp001",
+    "CreatedOn": null,
+    "ModifiedOn": null,
+    "Id": "Agr001",
+    "Name": "Agreement 1"
+  },
+  {
+    "SignedBy": null,
+    "Customer": {
+      "Id": "0002",
+      "Name": null
+    },
+    "SignedOn": "0001-01-01T00:00:00",
+    "TemplateId": "Temp002",
+    "CreatedOn": null,
+    "ModifiedOn": null,
+    "Id": "Ag002",
+    "Name": "Agreement 2"
+  },
+  {
+    "SignedBy": null,
+    "Customer": {
+      "Id": "0003",
+      "Name": null
+    },
+    "SignedOn": "0001-01-01T00:00:00",
+    "TemplateId": "Temp002",
+    "CreatedOn": null,
+    "ModifiedOn": null,
+    "Id": "Ag003",
+    "Name": "Agreement 3"
+  },
+  {
+    "SignedBy": null,
+    "Customer": {
+      "Id": "0001",
+      "Name": null
+    },
+    "SignedOn": "0001-01-01T00:00:00",
+    "TemplateId": "Temp001",
+    "CreatedOn": null,
+    "ModifiedOn": null,
+    "Id": "1b8032c6-67b0-4683-80c3-d4e59922b0f7",
+    "Name": null
+  },
+  {
+    "SignedBy": {
+      "FirstName": "Firstname",
+      "LastName": "Lastname",
+      "PhoneNumber": null,
+      "Email": "example@example.com",
+      "CreatedOn": null,
+      "ModifiedOn": null,
+      "Id": null,
+      "Name": null
+    },
+    "Customer": {
+      "Id": "6d271827-3393-4a40-89a1-c093ca02cb16",
+      "Name": null
+    },
+    "SignedOn": "2022-05-04T00:00:00",
+    "TemplateId": "1DECBA1A-184A-432A-8312-D8D178C8EEE5",
+    "CreatedOn": null,
+    "ModifiedOn": null,
+    "Id": "884f9c57-db70-4c3e-a69b-58f692bf92bd",
+    "Name": null
+  }
+]

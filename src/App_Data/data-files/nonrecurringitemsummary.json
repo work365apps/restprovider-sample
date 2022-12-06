@@ -1,0 +1,25 @@
+﻿[
+  {
+    "Id": "NRI1",
+    "Name": "NRI1",
+    "Customer": {
+      "Id": "e5ad7633-cd72-ec11-8943-0022480b34e2"
+    },
+    "ChargeStartDate": "2022-05-09",
+    "ChargeEndDate": "2022-05-09",
+    "NonRecurringItem": {
+      "Id": "NRI002"
+    },
+    "Invoice": { "Id": "Inv001" },
+    "Currency": "USD",
+    "Manufacturer": "Rest",
+    "PartNumber": "ABC001:001",
+    "Subscription": { "Id": "Sub002" },
+    "OrderId": "Ord001",
+    "UnitPrice": 0,
+    "Tax": 0,
+    "Total": 0,
+    "Quantity": 0,
+    "Discount": 0
+  }
+]

@@ -1,0 +1,51 @@
+﻿[
+  {
+    "PartNumber": null,
+    "FriendlyName": null,
+    "Description": null,
+    "Customer": null,
+    "Quantity": 0,
+    "Pricing": null,
+    "EffectiveDate": "0001-01-01T00:00:00",
+    "ExpiryDate": "0001-01-01T00:00:00",
+    "CreatedOn": null,
+    "ModifiedOn": null,
+    "Id": "NRI002",
+    "Name": "NRI 2"
+  },
+  {
+    "PartNumber": null,
+    "FriendlyName": null,
+    "Description": null,
+    "Customer": null,
+    "Quantity": 0,
+    "Pricing": null,
+    "EffectiveDate": "0001-01-01T00:00:00",
+    "ExpiryDate": "0001-01-01T00:00:00",
+    "CreatedOn": null,
+    "ModifiedOn": null,
+    "Id": "NRI003",
+    "Name": "NRI 3"
+  },
+  {
+    "PartNumber": "ABC001",
+    "FriendlyName": "NRI",
+    "Description": "NRI",
+    "Customer": {
+      "Id": "0001",
+      "Name": null
+    },
+    "Quantity": 1.0,
+    "Pricing": {
+      "Currency": "USD",
+      "Price": 12.0,
+      "RetailPrice": 14.0
+    },
+    "EffectiveDate": "2022-04-29T06:44:06.4624812Z",
+    "ExpiryDate": "2022-05-09T06:44:06.4634851Z",
+    "CreatedOn": null,
+    "ModifiedOn": null,
+    "Id": "NRI001",
+    "Name": "NRI001"
+  }
+]

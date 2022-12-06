@@ -1,0 +1,20 @@
+﻿[
+  {
+    "Id": "LS1",
+    "Name": "LS1",
+    "Customer": {
+      "Id": "e5ad7633-cd72-ec11-8943-0022480b34e2"
+    },
+    "ChargeStartDate": "2022-05-09",
+    "ChargeEndDate": "2022-05-09",
+    "Subscription": { "Id": "Sub002" },
+    "Invoice": { "Id": "Inv001" },
+    "Currency": "USD",
+    "OrderId": "Ord001",
+    "UnitPrice": 40,
+    "Tax": 10,
+    "Total": 50,
+    "Quantity": 1,
+    "Discount": 0
+  }
+]

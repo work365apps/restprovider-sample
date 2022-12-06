@@ -1,0 +1,129 @@
+﻿@* Copyright (c) IOTAP, Inc. All rights reserved. *@
+@{
+    ViewBag.Title = "Data Editor";
+}
+
+<script type="text/javascript" src="~/lib/jquery.json-editor.min.js"></script>
+
+<style type="text/css">
+    .row {
+        margin-top: 5px;
+    }
+
+    .fillRemaining {
+        height: calc(100vh - 100px);
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #json-display {
+        border: 1px solid #000;
+        margin: 0;
+        padding: 10px 20px;
+        height: 100%;
+        width: 100%;
+    }
+</style>
+
+<div class="row">
+    <div class="col-md-12">
+        <input type="password" class="form-control" id="key" placeholder="api key..." />
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-11">
+        <select class="form-select" id="file" onchange="loadFile();">
+            <option value="">Select a file to load...</option>
+            <option value="Agreement">Agreements</option>
+            <option value="ConsumptionLine">Consumption Lines</option>
+            <option value="Customer">Customer</option>
+            <option value="Invoice">Invoices</option>
+            <option value="NonRecurringItem">Non-Recurring Items</option>
+            <option value="Subscription">Subscriptions</option>
+        </select>
+    </div>
+    <div class="col-md-1 text-end">
+        <button class="btn btn-primary" onclick="save();" id="btnSave"><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" style="visibility:hidden" id="spinner"></span>&nbsp;Save</button>
+    </div>
+</div>
+
+<div class="row fillRemaining">
+    <pre id="json-display"></pre>
+</div>
+
+<script type="text/javascript">
+    var editor = new JsonEditor('#json-display');
+
+    function startProcessing() {
+        $('#file').attr('disabled', 'disabled');
+        $('#key').attr('disabled', 'disabled');
+        $('#btnSave').attr('disabled', 'disabled');
+        $('#spinner').css('visibility', 'visible');
+    }
+
+    function stopProcessing() {
+        $('#spinner').css('visibility', 'hidden');
+        $('#btnSave').attr('disabled', null);
+        $('#file').attr('disabled', null);
+        $('#key').attr('disabled', null);
+    }
+
+    function loadFile() {
+        let name = $('#file option:selected').val();
+        if (name == '') {
+            $('#btnSave').attr('disabled', 'disabled');
+            editor.load(null);
+            return;
+        }
+
+        startProcessing();
+        $.ajax({
+            url: '@Url.Action("GetFileContents")?name=' + encodeURIComponent(name),
+            method: 'get',
+            beforeSend: function (request) {
+                request.setRequestHeader('work-365-rest-provider-api-key', $('#key').val());
+            },
+            success: function (data) {
+                editor.load(JSON.parse(data));
+                $('#btnSave').attr('disabled', null);
+            },
+            error: function (status) {
+                console.log(status);
+                alert(status.statusText);
+            },
+            complete: function (data) {
+                stopProcessing();
+            }
+        });
+    }
+
+    function save() {
+        let name = $('#file option:selected').val();
+        if (name == '') {
+            alert('Target file is not selected!');
+            return;
+        }
+
+        startProcessing();
+        $.ajax({
+            url: '@Url.Action("Save")?name=' + encodeURIComponent(name),
+            method: 'post',
+            data: JSON.stringify(editor.get()),
+            beforeSend: function (request) {
+                request.setRequestHeader('work-365-rest-provider-api-key', $('#key').val());
+            },
+            dataType: 'json',
+            contentType: 'application/json',
+            success: function (data) {
+                alert('saved!');
+            },
+            error: function (status) {
+                console.log(status);
+                alert(status.statusText);
+            },
+            complete: function (data) {
+                stopProcessing();
+            }
+        });
+    }
+</script>

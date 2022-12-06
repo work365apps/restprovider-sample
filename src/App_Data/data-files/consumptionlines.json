@@ -1,0 +1,89 @@
+﻿[
+  {
+    "Id": "1",
+    "Name": "CL1",
+    "Currency": "USD",
+    "ChargeType": "New",
+    "CreatedOn": "2022-01-01",
+    "Customer": {
+      "Id": "e5ad7633-cd72-ec11-8943-0022480b34e2",
+      "Name": "Customer Name"
+    },
+    "CycleEndDate": "2020-02-01",
+    "CycleStartDate": "2022-01-01",
+    "Invoice": {
+      "Id": "Inv001",
+      "Name": "Invoice Name"
+    },
+    "Quantity": 1,
+    "Region": "EU",
+    "Resource": "Data Transfer Out - NAM or EU To Any",
+    "Service": "Bandwidth",
+    "Subscription": {
+      "Id": "Sub001",
+      "Name": "Subscription Name"
+    },
+    "Tax": 0,
+    "Total": 50,
+    "Unit": "Data Transfer Out (GB)",
+    "UnitPrice": 50
+  },
+  {
+    "Id": "2",
+    "Name": "CL2",
+    "Currency": "USD",
+    "ChargeType": "New",
+    "CreatedOn": "2022-01-01",
+    "Customer": {
+      "Id": "C101",
+      "Name": "Customer Name"
+    },
+    "CycleEndDate": "2020-02-01",
+    "CycleStartDate": "2022-01-01",
+    "Invoice": {
+      "Id": "Inv1010",
+      "Name": "Invoice Name"
+    },
+    "Quantity": 1,
+    "Region": "EU",
+    "Resource": "Data Transfer Out - NAM or EU To Any",
+    "Service": "Bandwidth",
+    "Subscription": {
+      "Id": "Sub001",
+      "Name": "Subscription Name"
+    },
+    "Tax": 0,
+    "Total": 100,
+    "Unit": "Data Transfer Out (GB)",
+    "UnitPrice": 50
+  },
+  {
+    "Id": "3",
+    "Name": "CL3",
+    "Currency": "USD",
+    "ChargeType": "New",
+    "CreatedOn": "2022-01-01",
+    "Customer": {
+      "Id": "C101",
+      "Name": "Customer Name"
+    },
+    "CycleEndDate": "2020-02-01",
+    "CycleStartDate": "2022-01-01",
+    "Invoice": {
+      "Id": "Inv1010",
+      "Name": "Invoice Name"
+    },
+    "Quantity": 1,
+    "Region": "North America",
+    "Resource": "Data Transfer Out - NAM or EU To Any",
+    "Service": "Bandwidth",
+    "Subscription": {
+      "Id": "Sub001",
+      "Name": "Subscription Name"
+    },
+    "Tax": 0,
+    "Total": 100,
+    "Unit": "Data Transfer Out (GB)",
+    "UnitPrice": 50
+  }
+]

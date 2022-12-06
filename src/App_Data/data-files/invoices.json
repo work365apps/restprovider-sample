@@ -1,0 +1,35 @@
+﻿[
+  {
+    "Id": "Inv001",
+    "Name": "Inv01",
+    "Currency": "USD",
+    "InvoiceDate": "2022-05-04",
+    "PaidAmount": 100,
+    "TotalCharges": 100
+
+  },
+  {
+    "Id": "Inv002",
+    "Name": "Inv02",
+    "Currency": "USD",
+    "InvoiceDate": "2022-05-04",
+    "PaidAmount": 200,
+    "TotalCharges": 200
+  },
+  {
+    "Id": "Inv003",
+    "Name": "Inv03",
+    "Currency": "USD",
+    "InvoiceDate": "2022-05-04",
+    "PaidAmount": 300,
+    "TotalCharges": 300
+  },
+  {
+    "Id": "Inv004",
+    "Name": "Inv04",
+    "Currency": "USD",
+    "InvoiceDate": "2022-05-04",
+    "PaidAmount": 400,
+    "TotalCharges": 400
+  }
+]
